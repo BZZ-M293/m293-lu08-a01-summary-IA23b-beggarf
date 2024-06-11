@@ -1,21 +1,187 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Zusammenfassung Modul 293</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zusammenfassung der Learningunits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        code {
+            display: block;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    
-  </header>
-  <nav>
-    
-  </nav>
-  <h1>Zusammenfassung Modul 293</h1>
 
-  <footer>
-    
-  </footer>
+<nav>
+    <a href="#lu01">LU01</a>
+    <a href="#lu02">LU02</a>
+    <a href="#lu03">LU03</a>
+    <a href="#lu04">LU04</a>
+    <a href="#lu05">LU05</a>
+    <a href="#lu06">LU06</a>
+    <a href="#lu07">LU07</a>
+    <a href="#lu08">LU08</a>
+</nav>
+
+<section id="lu01">
+    <h2>Learning Unit 01</h2>
+    <p>HTML Grundlagen, Struktur einer Webseite</p>
+    <code>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html lang="de"&gt;<br>
+        &lt;head&gt;<br>
+        &lt;meta charset="UTF-8"&gt;<br>
+        &lt;title&gt;Meine erste Webseite&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &lt;h1&gt;Hallo Welt&lt;/h1&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;
+    </code>
+</section>
+
+<section id="lu02">
+    <h2>Learning Unit 02</h2>
+    <p>CSS Grundlagen, Gestaltung einer Webseite</p>
+    <code>
+        &lt;style&gt;<br>
+        body {<br>
+            &nbsp;&nbsp;background-color: #f0f0f0;<br>
+            &nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+        }<br>
+        h1 {<br>
+            &nbsp;&nbsp;color: #333;<br>
+        }<br>
+        &lt;/style&gt;
+    </code>
+</section>
+
+<section id="lu03">
+    <h2>Learning Unit 03</h2>
+    <p>JavaScript Grundlagen, Interaktive Webseiten</p>
+    <code>
+        &lt;script&gt;<br>
+        function greet() {<br>
+            &nbsp;&nbsp;alert('Hallo Welt');<br>
+        }<br>
+        &lt;/script&gt;<br>
+        &lt;button onclick="greet()"&gt;Klick mich&lt;/button&gt;
+    </code>
+</section>
+
+<section id="lu04">
+    <h2>Learning Unit 04</h2>
+    <p>Formulare, Benutzereingaben verarbeiten</p>
+    <code>
+        &lt;form action="/submit" method="post"&gt;<br>
+        &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;<br>
+        &nbsp;&nbsp;&lt;input type="submit" value="Absenden"&gt;<br>
+        &lt;/form&gt;
+    </code>
+</section>
+
+<section id="lu05">
+    <h2>Learning Unit 05</h2>
+    <p>Fortgeschrittenes CSS, Layout-Techniken</p>
+    <code>
+        &lt;style&gt;<br>
+        .container {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;justify-content: space-between;<br>
+        }<br>
+        .box {<br>
+            &nbsp;&nbsp;width: 30%;<br>
+            &nbsp;&nbsp;background-color: #ddd;<br>
+            &nbsp;&nbsp;padding: 10px;<br>
+        }<br>
+        &lt;/style&gt;<br>
+        &lt;div class="container"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="box"&gt;Box 1&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="box"&gt;Box 2&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="box"&gt;Box 3&lt;/div&gt;<br>
+        &lt;/div&gt;
+    </code>
+</section>
+
+<section id="lu06">
+    <h2>Learning Unit 06</h2>
+    <p>Responsive Design, Webseiten für verschiedene Geräte anpassen</p>
+    <code>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+        &lt;style&gt;<br>
+        .responsive {<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            &nbsp;&nbsp;max-width: 600px;<br>
+        }<br>
+        &lt;/style&gt;<br>
+        &lt;img src="bild.jpg" class="responsive" alt="Beispielbild"&gt;
+    </code>
+</section>
+
+<section id="lu07">
+    <h2>Learning Unit 07</h2>
+    <p>Formularelemente und ihre Verwendung</p>
+    <code>
+        &lt;form&gt;<br>
+        &nbsp;&nbsp;&lt;label for="car"&gt;Wählen Sie ein Auto:&lt;/label&gt;<br>
+        &nbsp;&nbsp;&lt;select id="car" name="car"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="bmw"&gt;BMW&lt;/option&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>
+        &nbsp;&nbsp;&lt;/select&gt;<br>
+        &lt;/form&gt;
+    </code>
+</section>
+
+<section id="lu08">
+    <h2>Learning Unit 08</h2>
+    <p>Vertiefung der HTML- und CSS-Kenntnisse</p>
+    <code>
+        &lt;style&gt;<br>
+        .grid-container {<br>
+            &nbsp;&nbsp;display: grid;<br>
+            &nbsp;&nbsp;grid-template-columns: auto auto auto;<br>
+            &nbsp;&nbsp;gap: 10px;<br>
+        }<br>
+        .grid-item {<br>
+            &nbsp;&nbsp;background-color: #ccc;<br>
+            &nbsp;&nbsp;padding: 20px;<br>
+            &nbsp;&nbsp;text-align: center;<br>
+        }<br>
+        &lt;/style&gt;<br>
+        &lt;div class="grid-container"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="grid-item"&gt;1&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="grid-item"&gt;2&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="grid-item"&gt;3&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="grid-item"&gt;4&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="grid-item"&gt;5&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="grid-item"&gt;6&lt;/div&gt;<br>
+        &lt;/div&gt;
+    </code>
+</section>
+
 </body>
 </html>
+
